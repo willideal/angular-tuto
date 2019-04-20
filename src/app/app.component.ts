@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'willy awesome';
+  isAuth = false;
+  appareilOne = 'Machine à laver';
+  appareilTwo = 'Frigo';
+  appareilThree = 'Ordinateur';
+  /*status =  'eteint' ? 'eteint' : 'allumer';*/
+  constructor() {
+  }
+  onAllumer() {
+    console.log('on allume tout');
+  }
 }
